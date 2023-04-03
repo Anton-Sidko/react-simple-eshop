@@ -6,7 +6,7 @@ This is simple e-shop project.
 
 - React
 - Typescript
-- Redux - state management
+- Redux (Redux Toolkit and React Redux) - state management
 - React Router - manage navigation
 - Styled Components + SCSS
 - Vite - instead CRA
