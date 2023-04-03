@@ -1,0 +1,73 @@
+// Reset
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //1rem = 10px;
+}
+
+body {
+  font-family: 'Regular';
+  font-size: 1.6rem;
+  line-height: 1.25;
+}
+
+:root {
+  --main-color: #1a535d;
+  --accent-color: #f7b267;
+  --border-color: #7b2d26;
+  --bgc-game-over: color-mix(in srgb, var(--border-color) 50%, white);
+  --bgc: #ddd;
+  --bgc-light: #fff;
+}
+
+// Fonts
+@font-face {
+  font-family: 'BlackItalic';
+  font-display: swap;
+  src: local('Lato-BlackItalic'),
+    url(./src/fonts/Lato/Lato-BlackItalic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Bold';
+  font-display: swap;
+  src: local('Lato-Lato-Bold'),
+    url(./src/fonts/Lato/Lato-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Regular';
+  font-display: swap;
+  src: local('Lato-Regular'),
+    url(./src/fonts/Lato/Lato-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Light';
+  font-display: swap;
+  src: local('Lato-Light'), url(./fonts/Lato/Lato-Light.ttf) format('truetype');
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-wrapper {
+  width: min(100%, 144rem);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+main {
+  flex: 1;
+}
+
