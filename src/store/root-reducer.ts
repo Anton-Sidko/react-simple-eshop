@@ -1,7 +1,11 @@
 import { combineReducers } from '@reduxjs/toolkit';
 
-import counterReducer from './products/productsSlice';
+import productsReducer from './productsSlice';
+import cartReducer from './cartSlice';
 
 export const rootReducer = combineReducers({
-  counter: counterReducer,
+  products: productsReducer,
+  cart: cartReducer,
 });
+
+export type RootState = ReturnType<typeof rootReducer>;
